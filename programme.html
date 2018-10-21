@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the header */
+.header {
+ 
+    padding: 25px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 34px;
+     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); 
+}
+
+body {
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); 
+    }
+.container {
+    border-radius: 5px;
+     margin-left: 200px;
+    
+  padding: 1px 16px;
+  /* Same as the width of the sidenav */
+}
+    
+    
+ .sidenav {
+    
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+  height: %;
+  overflow-x: hidden;
+    padding-top: 20px;
+    /*height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 165px;
+    left: 0;
+    background: #eee;
+    overflow-x: hidden;
+    padding-top: 20px;*/
+}
+
+.sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    padding: 16px;
+    text-decoration: none;
+   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+background-color: #555;
+    color: #064579;
+}
+  
+@media (min-width:450px) {
+  body {
+    font-size: 14px;
+  }
+   .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 16px;
+    }
+    .head h1 {
+    font-size: 30px;
+  }
+    }
+    
+@media (min-width:600px) {
+  body {
+    font-size: 16px;
+  }
+    .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 18px;
+    }
+   .head h1{
+    font-size: 30px;
+  } 
+   
+    }
+    
+  
+  
+  
+
+
+@media (min-width:800px) {
+  body {
+    font-size: 18px;
+  }
+    .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 20px;
+    }
+  .head h1{
+    font-size: 32px;
+  }
+}
+
+@media (min-width:1000px) {
+  body {
+    /* Never get larger than this */
+    font-size: 20px;
+  }
+    .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 22px;
+    }
+  .head h1{
+    font-size: 34px;
+  }
+}    
+    
+
+</style>
+</head>
+<body id="programme">
+    
+ 
+    
+    
+<div class="header">
+  <h1>Workshop on Modelling Economic and Financial Time Series</h1>
+  <p> Universidad Carlos III de Madrid </p>
+  
+</div>
+
+<div class="sidenav">
+  <a  href="index.html">Home</a>
+  <a href="programme.html">Programme</a>
+  <a href="contact.html">How to find us</a>
+  <a href="registration.html">Registration</a>
+    <a href="submission.html">Abstract Submission</a>  
+</div>
+
+<div class="container">
+    
+    <div style="text-align:center">
+    <h3>Workshop on Modelling Economic and Financial Time Series</h3> 
+    <h4>Conference Programme </h4> 
+    <h4>Venue:  Campus Puerta de Toledo </h4> 
+             
+             </div>
+    
+    <h2>TBC</h2>
+
+</div>
+     
+</body>
+</html> 

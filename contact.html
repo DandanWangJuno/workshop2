@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head >
+    
+ <title>Page Title</title>
+<meta charset="UTF-8">  
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ * {
+    box-sizing: border-box;
+}
+
+    /* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}  
+    
+.body {
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); 
+    }
+
+    
+
+
+ /* Style the header */
+.header {
+ 
+    padding: 25px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 34px;
+     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); 
+}
+
+body {
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); 
+    }
+.container {
+    border-radius: 5px;
+     margin-left: 200px;
+    
+  padding: 1px 16px;
+  /* Same as the width of the sidenav */
+}
+    
+    
+ .sidenav {
+    
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+  height: %;
+  overflow-x: hidden;
+    padding-top: 20px;
+    /*height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 165px;
+    left: 0;
+    background: #eee;
+    overflow-x: hidden;
+    padding-top: 20px;*/
+}
+
+.sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    padding: 16px;
+    text-decoration: none;
+   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+background-color: #555;
+    color: #064579;
+}
+  
+@media (min-width:450px) {
+  body {
+    font-size: 14px;
+  }
+   .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 16px;
+    }
+    .head h1 {
+    font-size: 30px;
+  }
+    }
+    
+@media (min-width:600px) {
+  body {
+    font-size: 16px;
+  }
+    .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 18px;
+    }
+   .head h1{
+    font-size: 30px;
+  } 
+   
+    }
+    
+  
+  
+  
+
+
+@media (min-width:800px) {
+  body {
+    font-size: 18px;
+  }
+    .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 20px;
+    }
+  .head h1{
+    font-size: 32px;
+  }
+}
+
+@media (min-width:1000px) {
+  body {
+    /* Never get larger than this */
+    font-size: 20px;
+  }
+    .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 22px;
+    }
+  .head h1{
+    font-size: 34px;
+  }
+}  
+    
+</style>
+</head>
+<body id="contact">
+    
+    
+ 
+    
+<div class="header">
+  <h1>Workshop on Modelling Economic and Financial Time Series</h1>
+  <p> Universidad Carlos III de Madrid </p>
+  
+</div>
+
+<div class="sidenav">
+  <a  href="index.html">Home</a>
+  <a href="programme.html">Programme</a>
+  <a href="contact.html">How to find us</a>
+  <a href="registration.html">Registration</a>
+    <a href="submission.html">Abstract Submission</a>  
+</div>  
+    
+  
+ <div class="container">  
+     <div style="text-align:center">
+<h2>How to find  us</h2>
+<p>The workshop takes place in Campus Puerta de Toledo Room 1.A.04. </p>
+</div>
+   
+         
+  <div class="row">
+    <div class="column">
+    <h3>How to get there</h3>
+      <div id="map" style="width:100%;height:500px"></div>
+    </div>
+    <div class="column">
+    <h3>Contact Information:</h3>
+    <p>Helena Veiga </p>
+        <p> meftsevent@gmail.com </p>
+      
+<p>Department of Statistics </p>
+<p>Universidad Carlos III de Madrid </p>
+<p>Calle Madrid 126,  28903 Getafe (Madrid), Spain.</p>
+  </div>
+</div>
+
+<script>
+// Initialize google maps
+function myMap() {
+  var myCenter = new google.maps.LatLng(40.407123, -3.709679);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+ </div>   
+
+</body>
+</html>

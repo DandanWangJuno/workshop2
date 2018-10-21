@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.input[type=submit]:hover {
+    background-color: #45a049;
+}
+   
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+.header {
+ 
+    padding: 25px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 34px;
+     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); 
+}
+
+body {
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); 
+    }
+.container {
+    border-radius: 5px;
+     margin-left: 200px;
+    
+  padding: 1px 16px;
+  /* Same as the width of the sidenav */
+}
+    
+    
+ .sidenav {
+    
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+  height: %;
+  overflow-x: hidden;
+    padding-top: 20px;
+    /*height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 165px;
+    left: 0;
+    background: #eee;
+    overflow-x: hidden;
+    padding-top: 20px;*/
+}
+
+.sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    padding: 16px;
+    text-decoration: none;
+   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+background-color: #555;
+    color: #064579;
+}
+  
+@media (min-width:450px) {
+  body {
+    font-size: 14px;
+  }
+   .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 16px;
+    }
+    .head h1 {
+    font-size: 30px;
+  }
+    }
+    
+@media (min-width:600px) {
+  body {
+    font-size: 16px;
+  }
+    .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 18px;
+    }
+   .head h1{
+    font-size: 30px;
+  } 
+   
+    }
+    
+  
+  
+  
+
+
+@media (min-width:800px) {
+  body {
+    font-size: 18px;
+  }
+    .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 20px;
+    }
+  .head h1{
+    font-size: 32px;
+  }
+}
+
+@media (min-width:1000px) {
+  body {
+    /* Never get larger than this */
+    font-size: 20px;
+  }
+    .sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    
+   font-size: 22px;
+    }
+  .head h1{
+    font-size: 34px;
+  }
+}    
+    
+
+    
+    
+
+</style>
+</head>
+<body id="registration">
+ 
+    
+<div class="header">
+  <h1>Workshop on Modelling Economic and Financial Time Series</h1>
+  <p> Universidad Carlos III de Madrid </p>
+  
+</div>
+
+<div class="sidenav">
+  <a  href="index.html">Home</a>
+  <a href="programme.html">Programme</a>
+  <a href="contact.html">How to find us</a>
+  <a href="registration.html">Registration</a>
+    <a href="submission.html">Abstract Submission</a>  
+</div>  
+ <div class="container">     
+<div style="text-align:center">
+<h2>Registration Form</h2>
+  </div>
+ </div>
+      
+<div class="container">  
+    
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="meftsevent@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbx5FcK1PifSZOrmfrWWZ_ryRO3T7V1uhFo2u-6K/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="university">University</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="university" name="university" placeholder="Your university..">
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="email">Email Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email address" placeholder="Your email address..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="position">Position</label>
+      </div>
+      <div class="col-25">
+        <select id="position" name="position">
+          <option value="Professor">Professor</option>
+          <option value="Associate Professor">Associate Professor</option>
+          <option value="Assistant Professor">Assistant Professor</option>
+          <option value="Post-Doctor">Post-Doctor</option>
+          <option value="Ph.D student">Ph.D student</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+        
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thank you</em> for Registration!
+        </h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+<!-- END -->   
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+ 
+       
+</body>
+</html>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
